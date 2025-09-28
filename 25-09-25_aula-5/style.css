@@ -1,0 +1,41 @@
+/* seletor {
+    propriedade1: valor;
+    propriedade2: valor;
+} */
+
+/* seletores: tags, classes (.class), id (#id) */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    margin: 10px;
+}
+
+h1 {
+    color: rgb(233, 146, 187) !important;
+}
+
+section article h2 { /* isso é uma seção */
+    background-color:#1ce615;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+}
+
+.botao-bonito {
+    background-color:rgb(255, 109, 109);
+    padding: 10px 20px;
+}
+
+.botao-bonito { /* isso é uma classe */
+    margin: 30px;
+}
+
+#produtos { /* isso é um id */
+    background-color: pink;
+     width: 400px;
+    height: 400px;
+}
