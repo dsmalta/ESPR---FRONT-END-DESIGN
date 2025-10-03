@@ -1,0 +1,12 @@
+div {
+    border-right: solid 2px red;
+    border-left: dotted 3x green;
+    display: inline-block;
+    font-size: 32px;
+    font-family: Arial;
+    
+}
+
+span{
+    background-color: green;
+}
