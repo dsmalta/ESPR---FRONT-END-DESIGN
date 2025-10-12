@@ -1,0 +1,82 @@
+.cartoesProduto{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cadetblue;
+}
+
+h1 {
+    text-align: top;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    border-radius: 5px;
+    border-color: black
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    box-shadow: 8px 5px 8px black
+}
+
+button {
+    margin-top: 10px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    border-color: black;
+}
+
+button:hover{
+    background-color: rgb(219, 219, 219);
+}
+
+.cartao1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230px;
+    width: 200px;
+    background-color: blue;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.cartao2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230px;
+    width: 200px;
+    background-color: red;
+    border: 3px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+
+
+
+.cartao3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230px;
+    width: 200px;
+    background-color: green;
+    border: 3px solid black;
+    border-radius: 20px;
+}
