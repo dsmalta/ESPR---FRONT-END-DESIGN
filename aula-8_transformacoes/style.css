@@ -1,0 +1,68 @@
+#grad {
+    width: 400px;
+    height: 200px;
+    background-image: radial-gradient(red, blue);
+}
+
+/* #grad {
+    width: 400px;
+    height: 200px;
+    background-image: linear-gradient(to left, red, blue);
+} */
+
+div.vazio {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
+
+div.transform {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    background-color: red;
+    /* transform: translate(10px, 20px); */
+    /* transform: rotate(45deg); */
+    /* transform: scale(3,1); */
+    transform: skew(20deg, 10deg);
+}
+
+div.transition {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition: all 2s;
+}
+
+div.transition:hover {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    background-color: aqua;
+}
+
+h1 {
+    animation: aparecer 2s infinite ease-in-out
+}
+
+@keyframes aparecer {
+    /* from {
+
+    }
+    to{
+
+    } */
+
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    
+}
