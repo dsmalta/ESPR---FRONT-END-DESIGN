@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+  </head>
+  <body class="m-8">
+    <div class="w-10 h-10 bg-blue-500 rounded-full animate-fade p-2">TXT</div>
+    <div class="p-4 bg-green-300 rounded animate-fade w-20">Fade</div>
+    <button class="animate-wiggle">Treme</button>
+    <div class="animate-wiggle w-40 h-10 bg-green-500 rounded-full"></div>
+    <div class="animate-fade w-10 h-10 bg-yellow-400 rounded-full"></div>
+
+    <div
+      class="opacity-0 transition-opacity bg-blue-950 duration-[2s]"
+      data-observe
+    >
+      Aparece ao rolar!
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsa soluta
+      delectus inventore nihil iure doloremque repellat id sed omnis sunt cum
+      facere iste eum et qui error sit aliquid facilis ab, fugiat nemo earum,
+      assumenda natus? Sed iure voluptatibus aut numquam officia! Ab,
+      aspernatur! Molestias laboriosam alias illum quasi eos, incidunt quas hic?
+      Nesciunt saepe eum aut quae, libero quam asperiores explicabo consectetur
+      tempora nulla magnam repellat eos assumenda necessitatibus, provident
+      quaerat consequatur laborum! Doloremque esse quo, vel accusamus debitis
+      atque eius vitae nam rerum, hic, enim aut sapiente dolores dolor molestias
+      itaque facilis. Corrupti mollitia cumque nesciunt animi in ullam maiores!
+      Porro, atque fugit perspiciatis eos tempora suscipit voluptatum deserunt
+      modi beatae quas quis, molestiae a aspernatur impedit minima at illo! Quia
+      et animi ad tenetur, ipsam non ipsa deserunt nisi similique qui optio
+      delectus voluptates porro harum sed possimus iusto temporibus debitis
+      dolores, nam perspiciatis cumque doloremque numquam at.
+    </p>
+
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100");
+          }
+        });
+      });
+      document
+        .querySelectorAll("[data-observe]")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
