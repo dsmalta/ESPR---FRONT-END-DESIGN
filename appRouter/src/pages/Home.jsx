@@ -1,0 +1,22 @@
+function Home() {
+    return (
+        <div className='text-center p-8'>
+            <h1 className="text 4x1 font-bold text-blue-600 mb-4">
+            Página Inicial
+            </h1>
+            <p className="text-lg text-gray-600">
+            Bem-vindo ao meu app com React Router!
+            </p>
+            <div className="mt-8 p-6 bg-blue-50 rounded-lg">
+                <h2 className="text-xl font-semibold mb-2"></h2>
+                <ul className="text-left space-y-2">
+                    <li>Navegação Simples</li>
+                    <li>Múltiplas Páginas</li>
+                    <li>React Router</li>
+                </ul>
+            </div>
+        </div>
+    );
+}
+
+export default Home;
